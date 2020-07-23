@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  transition: all .2s; }
+  @media only screen and (max-width: 36em) {
+    html {
+      font-size: 52.5%; } }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative; }
+
+.red-grey_line::before,
+.red-grey_line::after,
+.green-line::after,
+.blue-line::after {
+  content: "";
+  display: block;
+  z-index: 200;
+  width: .3rem; }
+
+.red-grey_line {
+  position: absolute;
+  top: 0;
+  left: 20%; }
+  .red-grey_line:before {
+    background-color: hsl(0, 100%, 50%);
+    height: 50vh;
+    margin-left: 1px; }
+  .red-grey_line:after {
+    background-color: hsl(0, 0%, 50%);
+    height: 50vh;
+    margin-left: 1px; }
+
+.green-line {
+  position: absolute;
+  top: 15vh;
+  right: 20%; }
+  .green-line:after {
+    background-color: hsl(120, 100%, 25%);
+    height: 85vh; }
+
+.blue-line {
+  position: absolute;
+  top: 7.5vh;
+  left: 50%;
+  background-color: hsl(240, 100%, 25%);
+  width: 50%;
+  height: .25rem; }
+
+.header {
+  background-color: hsl(0, 0%, 100%);
+  flex: 15% 1 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.drop-down {
+  font-size: 1.5rem;
+  margin-left: -5%; }
+
+.menu-drop {
+  padding: 2px 5px;
+  font-size: 1.6rem;
+  border-radius: 2px; }
+
+.logo-box {
+  margin-left: 20%; }
+
+.main {
+  background-color: hsl(0, 0%, 80%);
+  flex: 45% 1 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.dot {
+  line-height: 0;
+  background-color: hsl(0, 0%, 0%);
+  height: .5rem;
+  width: .5rem;
+  border-radius: 50%; }
+
+.info-box {
+  background-color: hsl(0, 0%, 50%);
+  margin-right: 10%;
+  padding: 3rem;
+  transition: all .2s; }
+
+.footer {
+  background-color: hsl(240, 100%, 25%);
+  flex: 40% 1 1;
+  display: flex;
+  justify-content: space-between; }
+
+.copyright-box {
+  align-self: flex-end;
+  font-size: 1rem;
+  display: flex;
+  padding: 0 0 1rem 2rem;
+  text-align: center;
+  transition: all .2s; }
+  .copyright-box .copyright {
+    border-right: 1px solid hsl(0, 0%, 0%); }
+
+.address-box {
+  margin-right: 10%;
+  padding: 3rem;
+  justify-self: flex-end; }
+  .address-box .code {
+    text-decoration: underline; }
+
+.heading-1 {
+  font-size: 3rem;
+  text-transform: uppercase; }
+  .heading-1--big {
+    font-size: 3.5rem; }
+
+.heading-3 {
+  font-size: 2rem; }
+
+.heading-4 {
+  font-size: 1.7rem; }

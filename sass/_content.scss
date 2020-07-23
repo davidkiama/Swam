@@ -1,0 +1,24 @@
+.main{
+    background-color: $color-grey-2;
+    flex: 45% 1 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dot{
+    line-height: 0;
+    background-color: $color-black;
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+}
+
+
+.info-box{
+    background-color: $color-grey-1;
+    margin-right: 10%;
+    padding: 3rem;
+    transition: all .2s;   
+}

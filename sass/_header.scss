@@ -1,0 +1,25 @@
+.header{
+    background-color: $color-white;
+    flex: 15% 1 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.drop-down{
+    font-size: 1.5rem; 
+    margin-left: -5%;  
+}
+
+.menu-drop{
+    padding: 2px 5px;
+    font-size: 1.6rem;
+    border-radius: 2px;
+}
+
+
+.logo-box{
+    margin-left: 20%;
+}

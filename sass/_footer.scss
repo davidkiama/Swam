@@ -1,0 +1,33 @@
+.footer{
+    background-color: $color-blue-navy;
+    flex: 40% 1 1;
+
+    display: flex;
+    justify-content: space-between; 
+}
+
+.copyright-box{
+    align-self: flex-end;
+    font-size: 1rem;
+
+    display: flex;
+    padding: 0 0 1rem 2rem;
+    text-align: center;
+    transition: all .2s;
+
+    .copyright{
+        border-right: 1px solid $color-black;
+    }
+    
+}
+
+
+.address-box{
+    margin-right: 10%;
+    padding: 3rem;
+    justify-self: flex-end;
+
+    .code{
+        text-decoration: underline;  
+    }  
+}
